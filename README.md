@@ -3,7 +3,7 @@
 A Vue component for choosing colors with a nice big rainbow and HSL(A) and RGB(A) selection.
 
 # Status
-_This is still a work in progress. Some parts are missing, untested, or incomplete._
+_This is still a work very much in progress. Some parts are missing, untested, or incomplete._
 
 ## Done/Works
 
@@ -15,6 +15,7 @@ _This is still a work in progress. Some parts are missing, untested, or incomple
 
 ## To-do/Broken/Wanna-do
 
+- De-jank Firefox
 - Tests, and all the bugs they'll find
 - Verify that it can be imported as a package, and make it one.
 - An option to specify the input/output format
