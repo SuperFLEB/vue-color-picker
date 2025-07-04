@@ -1,0 +1,63 @@
+{
+  "name": "@superfleb/vue-color-picker",
+  "description": "A Vue color-picker component with both HSL(A) and RGB(A)",
+  "license": "MIT",
+  "version": "0.0.2",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --b --noEmit && vite build && vue-tsc -p tsconfig.lib.json --outDir ./dist",
+    "build-demo": "vite build -c vite.build-demo.config.ts",
+    "test-ct": "playwright test -c playwright-ct.config.ts"
+  },
+  "exports": {
+    "import": {
+      "types": "./dist/ColorPicker.vue.d.ts",
+      "default": "./dist/ColorPicker.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "dist-demo",
+    "README.md",
+    ".yarnrc.yml",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@playwright/experimental-ct-vue": "^1.53.0",
+    "@playwright/test": "^1.53.0",
+    "@superfleb/bump": "^1.0.1",
+    "@types/node": "^22.13.5",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
+    "sass": "^1.86.3",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.4",
+    "vite-plugin-lib-inject-css": "^2.2.2",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
+  },
+  "peerDependencies": {
+    "vue": "*"
+  },
+  "packageManager": "yarn@4.9.2",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SuperFLEB/vue-color-picker.git"
+  },
+  "keywords": [
+    "vue",
+    "color",
+    "color-picker",
+    "palette"
+  ],
+  "author": "FLEB (a.k.a. SuperFLEB)",
+  "bugs": {
+    "url": "https://github.com/SuperFLEB/vue-color-picker/issues"
+  },
+  "homepage": "https://github.com/SuperFLEB/vue-color-picker#readme",
+  "dependencies": {
+    "@superfleb/random": "^1.0.2",
+    "colord": "^2.9.3"
+  }
+}
